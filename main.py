@@ -1,10 +1,16 @@
 from docx import Document
+from docx.shared import Inches
 
 document = Document()
 
-name = input('What is your name?')
-phone_number = input('What is your phone number?')
-email = input('What is your email?')
+document.add_picture(
+    'me.jpg',
+    width=Inches(2.0)
+)
+
+# name = input('What is your name?')
+# phone_number = input('What is your phone number?')
+# email = input('What is your email?')
 
 name = 'Olaki Edwin'
 phone_number = '0787499401'
